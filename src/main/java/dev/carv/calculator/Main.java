@@ -10,8 +10,6 @@ public class Main {
      * @param args Needed args to run application.
      */
     public static void main(String[] args) {
-
-
         if (args.length != 3) {
             System.err.println("Need to provide 3 arguments: [operation] [value 1] [value 2]");
             System.exit(0);
