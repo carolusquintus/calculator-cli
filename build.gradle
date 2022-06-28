@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.dorongold.task-tree' version '2.1.0'
+}
+
+version '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+compileJava {
+    options.compilerArgs << '-Werror'
+}
+
+jar {
+    archivesBaseName = 'calculator'
+}
+
+javadoc {
+    source = sourceSets.main.allJava
+    title = "Calculator API $version"
+    options.header = "Calculator Header"
+    options.verbose()
+}
+
+application {
+    mainClass = 'dev.carv.calculator.Main'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'commons-cli:commons-cli:1.5.0'
+}
