@@ -18,7 +18,7 @@ public class Calculator {
 
     /**
      * Subtraction of two numbers.
-     * @param a first number to subtract.
+     * @param a first  number to subtract.
      * @param b second number to subtract.
      * @return the subtraction of both numbers.
      */
